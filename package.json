@@ -1,6 +1,6 @@
 {
   "name": "docomo-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NodeJS Wrapper for Docomo API",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,11 @@
     "docomo",
     "docomo-api"
   ],
+  "homepage": "https://github.com/nanonanomachine/node-docomo-api",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nanonanomachine/node-docomo-api"
+  },
   "license": "The MIT License",
   "dependencies": {
     "request": "^2.51.0",
