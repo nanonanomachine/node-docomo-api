@@ -1,0 +1,23 @@
+{
+  "name": "docomo-api",
+  "version": "0.0.1",
+  "description": "NodeJS Wrapper for Docomo API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha -w"
+  },
+  "author": "nanonanomachine",
+   "keywords": [
+    "docomo",
+    "docomo-api"
+  ],
+  "license": "The MIT License",
+  "dependencies": {
+    "request": "^2.51.0",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "should": "^4.4.1"
+  }
+}
