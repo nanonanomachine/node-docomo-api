@@ -1,6 +1,6 @@
 {
   "name": "docomo-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "NodeJS Wrapper for Docomo API",
   "main": "index.js",
   "scripts": {
