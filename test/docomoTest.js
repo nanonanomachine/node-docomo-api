@@ -62,4 +62,31 @@ describe('Docomo API', function(){
 			});
 		});
 	});
+	
+	describe('createKnowledgeQA', function(){
+		it('should get textForDisplay data', function(done){
+			var api = new Docomo(config.apiKey);
+			api.createKnowledgeQA('人類初の宇宙飛行士は？', function(error, data){
+				data.message.textForDisplay.should.not.equal('');
+				done();
+			});
+		});
+
+		it('should get answers array data', function(done){
+			var api = new Docomo(config.apiKey);
+			api.createKnowledgeQA('人類初の宇宙飛行士は？', function(error, data){
+				data.answers.length.should.be.above(0);
+				done();
+			});
+		});
+
+		it('should get error when apiKey is not set', function(done){
+			var api = new Docomo(config.apiKey);
+			api.apiKey = null;
+			api.createKnowledgeQA('人類初の宇宙飛行士は？', function(error, data){
+				should(error).be.ok;
+				done();
+			});
+		});
+	});
 });
