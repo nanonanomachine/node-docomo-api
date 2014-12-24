@@ -37,7 +37,22 @@ api.createDialogue('Hello', params, function(error, data){
 });
 ```
 
+##Methods
+
+###Dialogue
+
+```js
+createDialogue(utt, params, callback)
+```
+
+###KnowledgeQA
+
+```js
+createKnowledgeQA(q, callback)
+```
+
 Implemented Docomo APIs
 --------------------------
 
-* Dialogue
+* [Dialogue](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=5)
+* [KnowledgeQA](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=6)
